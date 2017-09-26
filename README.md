@@ -14,6 +14,8 @@ bundle install
 rails s
 ```
 
+Then navigate to `localhost:3000` in your browser
+
 ## Running tests
 
 ```shell
