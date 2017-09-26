@@ -1,0 +1,20 @@
+<div class="container">
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <div class="navbar-brand mb-0">
+      <%= render 'layouts/youtube' %>
+    </div>
+    <div class="navbar-nav">
+      <%= form_tag('/videos', method: 'get') do %>
+          <div class="input-group">
+            <%= text_field_tag 'id', nil, class: 'form-control', autofocus: true, placeholder: 'YouTube video ID' %>
+            <span class="input-group-btn">
+              <button class="btn btn-default">
+                <div class="search-icon"><%= fa_icon 'search' %></div>
+                <div class="loading-icon" style="display: none;"><%= fa_icon 'spinner' %></div>
+              </button>
+            </span>
+          </div>
+      <% end %>
+    </div>
+  </nav>
+</div>
